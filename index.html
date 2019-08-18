@@ -10,6 +10,13 @@
 
     </div>
     <button id="button">increase count</button>
+    <script>
+    let button = document.getElementById('button');
+ 
+ button.addEventListener('click', function(){
+   dispatch({type: 'INCREASE_COUNT'})
+ })
+    </script>
     <script src="./js/reducer.js" charset="utf-8"></script>
   </body>
 </html>
